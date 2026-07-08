@@ -14,23 +14,23 @@ class OurServicesSeeder extends Seeder
     {
         $services = [
             [
-                'service_name' => 'Mintaqaviy Mahsulotni Rivojlantirish',
+                'service_name' => 'Regional Product Development',
                 'skill_level' => 95,
             ],
             [
-                'service_name' => 'Mobilga Yo‘naltirilgan Tezkor Javob Xizmatlari',
+                'service_name' => 'Mobile-First Rapid Response Services',
                 'skill_level' => 85,
             ],
             [
-                'service_name' => 'Xavfsizlik Xizmatlari',
+                'service_name' => 'Security Services',
                 'skill_level' => 80,
             ],
             [
-                'service_name' => 'Malumotlar Bazasini Boshqarish',
+                'service_name' => 'Database Management',
                 'skill_level' => 95,
             ],
             [
-                'service_name' => 'Ijodiy Ekologik Arxitektura',
+                'service_name' => 'Creative Eco-Architecture',
                 'skill_level' => 75,
             ],
         ];        

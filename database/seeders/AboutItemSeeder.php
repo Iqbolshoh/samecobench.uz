@@ -10,14 +10,14 @@ class AboutItemSeeder extends Seeder
     public function run(): void
     {
         $items = [
-            'Biz har bir mijozning ehtiyojlariga mos yuqori sifatli xizmatlarni taqdim etamiz.',
-            'Biz zamonaviy texnologiyalar yordamida innovatsion yechimlar ishlab chiqamiz.',
-            'Har bir loyihaga shaxsiy yondashamiz va ijodiy g‘oyalarni taklif qilamiz.',
-            'Tajribali mutaxassislarimiz har qanday muammoni hal qilishga tayyor.',
-            'Qo‘llab-quvvatlash jamoamiz har doim mijozlarimizga yordam berishga tayyor.',
-            'Biz xizmat sifatini innovatsion yondashuvlar bilan oshiramiz.',
-            'Har bir noyob loyiha uchun maxsus strategiyalar yaratamiz.',
-            'Biz mijozlarimizga yangi imkoniyatlarni ochishda yordam beramiz.',
+            'We deliver high-quality services tailored to every client\'s needs.',
+            'We develop innovative solutions using modern technologies.',
+            'We take a personal approach to every project and bring creative ideas to the table.',
+            'Our experienced specialists are ready to solve any challenge.',
+            'Our support team is always ready to help our clients.',
+            'We raise service quality through innovative approaches.',
+            'We create custom strategies for every unique project.',
+            'We help our clients unlock new opportunities.',
         ];
 
         foreach ($items as $item) {

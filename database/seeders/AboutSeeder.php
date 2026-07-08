@@ -10,9 +10,9 @@ class AboutSeeder extends Seeder
     public function run(): void
     {
         About::create([
-            'title' => 'Bizning xizmatlarimiz',
-            'text_1' => "Biz sizga quyosh panellari, shamol turbinalari va kichik GES kabi qayta tiklanuvchi energiya manbalaridan foydalangan holda innovatsion arxitektura loyihalari va noyob yechimlarni taklif qilishga tayyormiz. Jamoamiz har doim eng yaxshi natijalarga erishishga intiladi. Biz o‘z bilimlarimizni doimiy rivojlantirib, mijozlarimizga eng samarali yechimlarni taklif etishga harakat qilamiz.",
-            'text_2' => "Mijozlarimiz bilan uzoq muddatli va ishonchli munosabatlar o‘rnatish bizning eng ustuvor vazifamizdir.",
+            'title' => 'Our Services',
+            'text_1' => "We are ready to offer innovative architectural projects and unique solutions using renewable energy sources such as solar panels, wind turbines, and small hydroelectric plants. Our team always strives to achieve the best results. We continuously grow our expertise to offer our clients the most effective solutions.",
+            'text_2' => "Building long-term, trustworthy relationships with our clients is our top priority.",
             'image' => 'about-images/01JTW4V2P04DS50V40QB4F845Z.jpg',
         ]);
 

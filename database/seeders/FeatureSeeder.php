@@ -12,18 +12,18 @@ class FeatureSeeder extends Seeder
         $features = [
             [
                 'icon_class' => 'bi bi-bounding-box-circles',
-                'title' => 'Innovatsion yechimlar',
-                'description' => 'Bizning innovatsion yechimlarimiz hayotingiz va biznesingizni o‘zgartirish uchun mo‘ljallangan.',
+                'title' => 'Innovative Solutions',
+                'description' => 'Our innovative solutions are designed to transform your life and your business.',
             ],
             [
                 'icon_class' => 'bi bi-calendar4-week',
-                'title' => 'Bepul maslahatlar',
-                'description' => 'Jamoamizdan mutaxassis maslahatlarini bepul oling va tezroq rivojlaning.',
+                'title' => 'Free Consultations',
+                'description' => 'Get free expert advice from our team and grow faster.',
             ],
             [
                 'icon_class' => 'bi bi-broadcast',
-                'title' => 'Kuchli tarmoq',
-                'description' => 'Bizning kuchli tarmog‘imiz orqali cheksiz imkoniyatlarga ega bo‘ling.',
+                'title' => 'Strong Network',
+                'description' => 'Gain access to unlimited opportunities through our strong network.',
             ],
         ];        
 

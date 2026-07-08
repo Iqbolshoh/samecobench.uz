@@ -14,33 +14,33 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'title' => 'Bizning Xizmatlarimiz',
-                'description' => 'Biz har bir mijozga moslashtirilgan shaxsiylashtirilgan yechimlarni taqdim etamiz.',
+                'title' => 'Our Services',
+                'description' => 'We provide personalized solutions tailored to every client.',
                 'icon' => 'bi bi-activity',
             ],
             [
-                'title' => 'Maxsus Yechimlar',
-                'description' => 'Bizning xizmatlarimiz har bir mijozning ehtiyojlariga moslashtirilgan noyob yechimlarni taqdim etadi.',
+                'title' => 'Custom Solutions',
+                'description' => 'Our services deliver unique solutions tailored to every client\'s needs.',
                 'icon' => 'bi bi-broadcast',
             ],
             [
-                'title' => 'Innovatsion Yondashuvlar',
-                'description' => 'Biz sizning muammolaringizni innovatsion usullar va strategiyalar bilan hal qilamiz.',
+                'title' => 'Innovative Approaches',
+                'description' => 'We solve your challenges with innovative methods and strategies.',
                 'icon' => 'bi bi-easel',
             ],
             [
-                'title' => 'Tez va Samarali Xizmatlar',
-                'description' => 'Biz tez va samarali xizmatlarni taqdim etamiz, yuqori sifatga katta e’tibor qaratamiz.',
+                'title' => 'Fast and Efficient Services',
+                'description' => 'We deliver fast, efficient services with a strong focus on quality.',
                 'icon' => 'bi bi-bounding-box-circles',
             ],
             [
-                'title' => 'Mutaxassislar Maslahati',
-                'description' => 'Bizning mutaxassislarimiz sizning o‘sishingizga yordam berish uchun eng yuqori darajadagi maslahatlarni taqdim etadi.',
+                'title' => 'Expert Consultation',
+                'description' => 'Our experts provide top-tier guidance to help you grow.',
                 'icon' => 'bi bi-calendar4-week',
             ],
             [
-                'title' => 'Mijozlar Bilan Aloqa',
-                'description' => 'Biz mijozlarimiz bilan ochiq va do\'stona aloqani saqlaymiz. Biz doimo tinglaymiz.',
+                'title' => 'Client Communication',
+                'description' => 'We maintain open, friendly communication with our clients. We are always listening.',
                 'icon' => 'bi bi-chat-square-text',
             ],
         ];        
