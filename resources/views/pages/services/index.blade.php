@@ -1,26 +1,26 @@
 @extends('layouts.app')
 
-@section('title', 'Xizmatlar')
-@section('description', 'Sam Ecobench tomonidan taqdim etiladigan ekologik xizmatlar: quyosh panellari o‘rnatish, smart skameykalar, quyosh ustunlari va boshqa yashil texnologiyalar. Biz bilan yashil kelajak sari qadam qo‘ying!')
+@section('title', 'Services')
+@section('description', 'Eco-friendly services from Sam Ecobench: solar panel installation, smart benches, solar pillars, and other green technologies. Take a step toward a green future with us!')
 
-@section('keywords', 'xizmatlar, Sam Ecobench xizmatlari, ekologik texnologiyalar, quyosh panellari, smart skameyka, quyosh ustunlari, yashil energiya, samarali yechimlar, energiya tejash')
+@section('keywords', 'services, Sam Ecobench services, eco technologies, solar panels, smart bench, solar pillars, green energy, efficient solutions, energy saving')
 
 @section('content')
-    <!-- Sahifa sarlavhasi -->
+    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Bosh sahifa</a></li>
-                    <li class="current">Xizmatlar</li>
+                    <li><a href="/">Home</a></li>
+                    <li class="current">Services</li>
                 </ol>
             </nav>
-            <h1>Xizmatlar</h1>
+            <h1>Services</h1>
         </div>
     </div>
-    <!-- Sahifa sarlavhasi tugadi -->
+    <!-- End Page Title -->
 
-    <!-- Ko‘nikmalar bo‘limi -->
+    <!-- Skills Section -->
     <section id="skills" class="skills section">
         <div class="container section-title" data-aos="fade-up">
             <h2>{{ $service_sections[0]->title }}</h2>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-lg-6 d-flex align-items-center">
                     <img src="{{ asset('storage/' . $service_sections[0]->image) }}" class="img-fluid"
-                        alt="Mahsulotlarimiz">
+                        alt="Our Products">
                 </div>
 
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <!-- Xizmatlar bo‘limi -->
+    <!-- Services Section -->
     <section id="services" class="services section">
         <div class="container">
             <div class="row gy-4">

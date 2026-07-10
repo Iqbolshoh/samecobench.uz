@@ -1,23 +1,23 @@
 @extends('layouts.app')
 
-@section('title', 'Mahsulotlar')
-@section('description', 'Sam Ecobench tomonidan taqdim etilgan ekologik mahsulotlar: quyosh panellari, smart skameykalar, quyosh ustunlari va boshqa innovatsion yechimlar. Mahsulotlarimiz bilan tanishing!')
+@section('title', 'Products')
+@section('description', 'Eco-friendly products from Sam Ecobench: solar panels, smart benches, solar pillars, and other innovative solutions. Discover our products!')
 
-@section('keywords', 'mahsulotlar, ekologik mahsulotlar, quyosh paneli, smart skameyka, quyosh ustuni, Sam Ecobench mahsulotlari, yashil texnologiyalar, ekologik yechimlar')
+@section('keywords', 'products, eco-friendly products, solar panel, smart bench, solar pillar, Sam Ecobench products, green technologies, eco-friendly solutions')
 
 @section('content')
-    <!-- Sahifa nomi -->
+    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="./">Bosh sahifa</a></li>
-                    <li class="current">Mahsulotlar</li>
+                    <li><a href="./">Home</a></li>
+                    <li class="current">Products</li>
                 </ol>
             </nav>
-            <h1>Mahsulotlar</h1>
+            <h1>Products</h1>
         </div>
-    </div><!-- Sahifa nomi tugadi -->
+    </div><!-- End Page Title -->
 
     <style>
         .product-link {
@@ -39,19 +39,19 @@
         }
     </style>
 
-    <!-- Mahsulotlar bo'limi -->
+    <!-- Products Section -->
     <section id="portfolio" class="portfolio section">
         <div class="container">
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-                <!-- Mahsulotlar kategoriyasi -->
+                <!-- Product Categories -->
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                    <li data-filter="*" class="filter-active">Hammasi</li>
+                    <li data-filter="*" class="filter-active">All</li>
                     @foreach ($categories as $category)
                         <li data-filter=".filter-category-{{ $category->id }}">{{ $category->name }}</li>
                     @endforeach
                 </ul>
-                <!-- Mahsulotlar kategoriyasi tugadi -->
+                <!-- End Product Categories -->
 
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                     @foreach ($groupedProducts as $category_id => $products)
@@ -67,7 +67,7 @@
                                             <h4>{{ $product->product_name }}</h4>
                                             <p>{!!  Str::limit($product->description, 400) !!}</p>
                                             <a href="{{ route('products.show', ['id' => $product->id]) }}" class="product-link">
-                                                Batafsil
+                                                Read More
                                             </a>
                                         </div>
                                     </a>
@@ -75,10 +75,10 @@
                             </div>
                         @endforeach
                     @endforeach
-                </div><!-- Portfolio konteyneri tugadi -->
+                </div><!-- End Portfolio Container -->
 
             </div>
         </div>
-    </section><!-- /Mahsulotlar bo'limi -->
+    </section><!-- /Products Section -->
 
 @endsection

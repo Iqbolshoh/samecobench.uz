@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Yangiliklar Tafsilotlari')
-@section('description', 'Sam Ecobench kompaniyasining so‘nggi yangiliklari, ekologik texnologiyalardagi yangiliklar, loyiha boshlanishlari va muvaffaqiyatli ishlar haqida bilib oling.')
+@section('title', 'News Details')
+@section('description', 'Read the latest news from Sam Ecobench, updates in eco-friendly technologies, project launches, and success stories.')
 
-@section('keywords', 'yangiliklar, so‘nggi yangiliklar, ekologik yangiliklar, Sam Ecobench, ekologik texnologiyalar, loyihalar, yashil energiya, yangiliklar Samarqand')
+@section('keywords', 'news, latest news, eco-friendly news, Sam Ecobench, eco technologies, projects, green energy, Samarkand news')
 
 <style>
 .content img,
@@ -22,12 +22,12 @@
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Bosh sahifa</a></li>
-                    <li><a href="{{ route('news.index') }}">Yangiliklar</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ route('news.index') }}">News</a></li>
                     <li class="current">{{ Str::limit($newsItem->title, 30) }}</li>
                 </ol>
             </nav>
-            <h1>Yangiliklar Tafsilotlari</h1>
+            <h1>News Details</h1>
         </div>
     </div>
 
@@ -36,7 +36,7 @@
 
             <div class="col-lg-8">
 
-                <!-- Blog Tafsilotlari Bo'limi -->
+                <!-- Blog Details Section -->
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
 
@@ -52,7 +52,7 @@
                                 <ul>
                                     <li>
                                         <i class="bi bi-eye" style="color: var(--accent-color);"></i>
-                                        {{ $newsItem->views }} Ko'rish
+                                        {{ $newsItem->views }} Views
                                     </li>
                                     <li>
                                         <i class="bi bi-clock" style="color: var(--accent-color);"></i>
@@ -73,11 +73,11 @@
                 <div class="widgets-container">
 
                     <div class="recent-posts-widget widget-item" id="recent-posts" aria-live="polite">
-                        <h3 class="widget-title" style="color: var(--heading-color);">So'nggi Yangiliklar</h3>
+                        <h3 class="widget-title" style="color: var(--heading-color);">Latest News</h3>
                         @if($recentNews->isEmpty())
                             <div class="alert alert-info"
                                 style="background-color: var(--surface-color); color: var(--default-color); border-color: var(--accent-color);">
-                                So'nggi postlar mavjud emas.
+                                No recent posts available.
                             </div>
                         @else
                             <div class="recent-news-list">
@@ -105,12 +105,12 @@
                                                     </time>
                                                     <span>
                                                         <i class="bi bi-eye me-1" style="color: var(--accent-color);"></i>
-                                                        {{ $recent->views }} ko'rish
+                                                        {{ $recent->views }} views
                                                     </span>
                                                 </div>
                                                 <a href="{{ route('news.show', $recent->id) }}" class="btn btn-sm mt-1"
                                                     style="background-color: var(--accent-color); color: var(--contrast-color); border-color: var(--accent-color);">
-                                                    Batafsil <i class="bi bi-arrow-right ms-1"></i>
+                                                    Read More <i class="bi bi-arrow-right ms-1"></i>
                                                 </a>
                                             </div>
                                         </div>

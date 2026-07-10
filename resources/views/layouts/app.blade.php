@@ -52,7 +52,7 @@
 
     {{-- Main & Tailwind --}}
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-     <link rel="stylesheet" href="/build/assets/app-CZpuaKqv.css" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     {{-- Extra Head Content --}}
     @stack('head')
@@ -88,7 +88,6 @@
 
     {{-- Main JS --}}
     <script src="{{ asset('js/main.js') }}"></script>
-     <script type="module" src="/build/assets/app-T1DpEqax.js"></script>
 </body>
 
 </html>

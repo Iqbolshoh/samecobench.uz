@@ -14,22 +14,22 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'name' => 'Ilova',
+                'name' => 'App',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'Mahsulot',
+                'name' => 'Product',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'Brendlash',
+                'name' => 'Branding',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'Kitob',
+                'name' => 'Book',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'Yangiliklar')
-@section('description', 'Sam Ecobench kompaniyasining so¡®nggi yangiliklari, ekologik texnologiyalardagi yangiliklar, loyiha boshlanishlari va muvaffaqiyatli ishlar haqida bilib oling.')
+@section('title', 'News')
+@section('description', 'Read the latest news from Sam Ecobench, updates in eco-friendly technologies, project launches, and success stories.')
 
-@section('keywords', 'yangiliklar, so¡®nggi yangiliklar, ekologik yangiliklar, Sam Ecobench, ekologik texnologiyalar, loyihalar, yashil energiya, yangiliklar Samarqand')
+@section('keywords', 'news, latest news, eco-friendly news, Sam Ecobench, eco technologies, projects, green energy, Samarkand news')
 
 @section('content')
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Bosh sahifa</a></li>
-                    <li class="current">Yangiliklar</li>
+                    <li><a href="/">Home</a></li>
+                    <li class="current">News</li>
                 </ol>
             </nav>
-            <h1>Yangiliklar</h1>
+            <h1>News</h1>
         </div>
     </div>
 
@@ -38,7 +38,7 @@
                                         </h2>
                                         <div class="meta-top">
                                             <ul>
-                                                <li><i class="bi bi-eye"></i> {{ $new->views }} Ko'rilgan</li>
+                                                <li><i class="bi bi-eye"></i> {{ $new->views }} Views</li>
                                                 <li><i class="bi bi-clock"></i> {{ $new->created_at->format('F j, Y') }}
                                                 </li>
                                             </ul>
@@ -46,7 +46,7 @@
                                         <div class="content">
                                             <p>{!!  Str::limit($new->description, 400) !!}</p>
                                             <div class="read-more">
-                                                <a href="{{ route('news.show', $new->id) }}">Davomini o'qish</a>
+                                                <a href="{{ route('news.show', $new->id) }}">Read More</a>
                                             </div>
                                         </div>
                                     </article>
@@ -70,11 +70,11 @@
                 <div class="widgets-container">
 
                     <div class="recent-posts-widget widget-item" id="recent-posts" aria-live="polite">
-                        <h3 class="widget-title" style="color: var(--heading-color);">So'nggi Yangiliklar</h3>
+                        <h3 class="widget-title" style="color: var(--heading-color);">Latest News</h3>
                         @if($recentNews->isEmpty())
                             <div class="alert alert-info"
                                 style="background-color: var(--surface-color); color: var(--default-color); border-color: var(--accent-color);">
-                                Yangi postlar mavjud emas.
+                                No recent posts available.
                             </div>
                         @else
                             <div class="recent-news-list">
@@ -102,12 +102,12 @@
                                                     </time>
                                                     <span>
                                                         <i class="bi bi-eye me-1" style="color: var(--accent-color);"></i>
-                                                        {{ $recent->views }} ko'rish
+                                                        {{ $recent->views }} views
                                                     </span>
                                                 </div>
                                                 <a href="{{ route('news.show', $recent->id) }}" class="btn btn-sm mt-1"
                                                     style="background-color: var(--accent-color); color: var(--contrast-color); border-color: var(--accent-color);">
-                                                    Davomini o'qish <i class="bi bi-arrow-right ms-1"></i>
+                                                    Read More <i class="bi bi-arrow-right ms-1"></i>
                                                 </a>
                                             </div>
                                         </div>

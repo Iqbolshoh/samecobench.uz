@@ -1,39 +1,39 @@
 @extends('layouts.app')
 
-@section('title', 'Biz haqimizda')
-@section('description', 'Sam Ecobench — Samarqandda faoliyat yurituvchi ekologik texnologiyalar kompaniyasi. Biz quyosh energiyasi asosida ishlovchi innovatsion mahsulotlarni ishlab chiqamiz va tarqatamiz. Jamoamiz va missiyamiz bilan tanishing!')
+@section('title', 'About Us')
+@section('description', 'Sam Ecobench is an eco-technology company based in Samarkand. We develop and distribute innovative products powered by solar energy. Get to know our team and our mission!')
 
-@section('keywords', 'Biz haqimizda, Sam Ecobench, ekologik kompaniya, quyosh energiyasi, Samarqand kompaniya, yashil energiya, ekologik texnologiyalar, jamoa, missiya, ekologik yechimlar')
+@section('keywords', 'About Us, Sam Ecobench, eco company, solar energy, Samarkand company, green energy, eco technologies, team, mission, eco-friendly solutions')
 
 @section('content')
-    <!-- Sahifa sarlavhasi -->
+    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Bosh sahifa</a></li>
-                    <li class="current">Biz haqimizda</li>
+                    <li><a href="/">Home</a></li>
+                    <li class="current">About Us</li>
                 </ol>
             </nav>
-            <h1>Biz haqimizda</h1>
+            <h1>About Us</h1>
         </div>
     </div>
-    <!-- Sahifa sarlavhasi yakuni -->
+    <!-- End Page Title -->
 
-    <!-- Biz haqimizda bo‘limi -->
+    <!-- About Section -->
     <section id="about" class="section about">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4">
                 @foreach ($aboutItems as $about)
                     <div class="col-lg-6 order-1 order-lg-2">
                         @if (!empty($about['image']))
-                            <img src="{{ asset('storage/' . $about['image']) }}" class="img-fluid" alt="Biz haqimizda">
+                            <img src="{{ asset('storage/' . $about['image']) }}" class="img-fluid" alt="About Us">
                         @endif
                     </div>
                     <div class="col-lg-6 order-2 order-lg-1 content">
                         <h3>{{ $about['title'] }}</h3>
                         <p class="fst-italic">{!!  $about['text_1'] !!}</p>
-                        <h4>Xizmatlarimiz:</h4>
+                        <h4>Our Services:</h4>
                         @if (!empty($about['list_items']))
                             <ul>
                                 @foreach ($about['list_items'] as $item)
@@ -47,9 +47,9 @@
             </div>
         </div>
     </section>
-    <!-- Biz haqimizda bo‘limi yakuni -->
+    <!-- End About Section -->
 
-    <!-- Statistika bo‘limi -->
+    <!-- Stats Section -->
     <section id="stats" class="stats section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4">
@@ -68,5 +68,5 @@
             </div>
         </div>
     </section>
-    <!-- Statistika bo‘limi yakuni -->
+    <!-- End Stats Section -->
 @endsection

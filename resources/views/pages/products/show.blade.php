@@ -1,21 +1,21 @@
 @extends('layouts.app')
 
-@section('title', 'Mahsulot Tafsilotlari')
-@section('description', 'Sam Ecobench tomonidan taqdim etilgan ekologik mahsulotlar: quyosh panellari, smart skameykalar, quyosh ustunlari va boshqa innovatsion yechimlar. Mahsulotlarimiz bilan tanishing!')
+@section('title', 'Product Details')
+@section('description', 'Eco-friendly products from Sam Ecobench: solar panels, smart benches, solar pillars, and other innovative solutions. Discover our products!')
 
-@section('keywords', 'mahsulotlar, ekologik mahsulotlar, quyosh paneli, smart skameyka, quyosh ustuni, Sam Ecobench mahsulotlari, yashil texnologiyalar, ekologik yechimlar')
+@section('keywords', 'products, eco-friendly products, solar panel, smart bench, solar pillar, Sam Ecobench products, green technologies, eco-friendly solutions')
 
 @section('content')
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Bosh sahifa</a></li>
-                    <li><a href="{{ route('news.index') }}">Mahsulot Tafsilotlari</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ route('news.index') }}">Product Details</a></li>
                     <li class="current">{{ Str::limit($product->product_name, 30) }}</li>
                 </ol>
             </nav>
-            <h1>Mahsulot Tafsilotlari</h1>
+            <h1>Product Details</h1>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
                             <div class="swiper-wrapper align-items-center">
                                 @foreach ($product->images as $image)
                                     <div class="swiper-slide">
-                                        <img src="{{ asset('storage/' . $image->image_url) }}" alt="Mahsulot rasmi">
+                                        <img src="{{ asset('storage/' . $image->image_url) }}" alt="Product image">
                                     </div>
                                 @endforeach
                             </div>
@@ -47,22 +47,22 @@
 
                     <div class="col-lg-4">
                         <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                            <h3>Mahsulot Haqida Ma'lumot</h3>
+                            <h3>Product Information</h3>
                             <ul>
-                                <li><strong>Kategoriya</strong>: {{ $product->category->category_name ?? 'Nomalum' }}</li>
-                                <li><strong>Mahsulot Nomi</strong>: {{ $product->product_name }}</li>
-                                <li><strong>Narxi</strong>: {{ number_format($product->price, 0, '', ' ') }} So'm</li>
+                                <li><strong>Category</strong>: {{ $product->category->category_name ?? 'Unknown' }}</li>
+                                <li><strong>Product Name</strong>: {{ $product->product_name }}</li>
+                                <li><strong>Price</strong>: {{ number_format($product->price, 0, '', ' ') }} UZS</li>
                             </ul>
                         </div>
                         <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                            <h2>Mahsulot Tavsifi</h2>
+                            <h2>Product Description</h2>
                             <p>{{ $product->product_name }} – {!! $product->description !!}</p>
                         </div>
                     </div>
                 @else
                     <div class="col-12 product-not-found text-center">
-                        <h3>Mahsulot Topilmadi</h3>
-                        <p>Qidirayotgan mahsulotingiz mavjud emas.</p>
+                        <h3>Product Not Found</h3>
+                        <p>The product you're looking for doesn't exist.</p>
                     </div>
                 @endif
             </div>

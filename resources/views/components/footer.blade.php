@@ -16,21 +16,20 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12 footer-links mb-4">
-                <h4>Foydali Havolalar</h4>
+                <h4>Useful Links</h4>
                 <ul>
-                    <li><i class="bi bi-chevron-right"></i> <a href="/">Bosh sahifa</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="/about">Biz haqimizda</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="/services">Xizmatlar</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="/news">Yangiliklar</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="/products">Mahsulotlar</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="/contact">Bog'lanish</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="/about">About Us</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="/services">Services</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="/news">News</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="/products">Products</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="/contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-4 col-md-12 footer-follow mb-4">
-                <h4>Bizni Kuzatib Boring</h4>
-                <p>Bizning so'nggi mahsulotlarimiz va takliflarimizdan xabardor bo'ling. Ijtimoiy tarmoqlarda bizni
-                    kuzatib boring!</p>
+                <h4>Follow Us</h4>
+                <p>Stay up to date with our latest products and offers. Follow us on social media!</p>
                 <div class="social-links d-flex">
                     @foreach ($socialLinks as $link)
                         @if($link['is_active'] && $link['link'])
@@ -45,8 +44,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-        <p>© <span>Mualliflik huquqi</span> <strong class="px-1 sitename"> {{ config('app.name') }} </strong>
-            <span>Barcha huquqlar himoyalangan</span>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename"> {{ config('app.name') }} </strong>
+            <span>All Rights Reserved</span>
         </p>
     </div>
 
@@ -102,20 +101,20 @@
         <div class="corner corner-bl"></div>
         <div class="corner corner-br"></div>
 
-        <h1 class="heading">Premium Dasturlash Xizmatlari</h1>
-        <p class="description">Kelajakni ilg'or kodlar va innovatsion texnologiyalar bilan qurmoqdamiz..</p>
+        <h1 class="heading">Premium Development Services</h1>
+        <p class="description">Building the future with advanced code and innovative technology.</p>
         <div class="cta-buttons">
-            <a href="tel:+998997799333" class="btn">
+            <a href="tel:+998776030033" class="btn">
                 <span class="btn-icon"><i class="fa-solid fa-phone"></i></span>
-                Bizni chaqiring
+                Call Us
             </a>
             <a href="https://iqbolshoh.uz" class="btn" target="_blank">
                 <span class="btn-icon"><i class="fa-solid fa-globe"></i></span>
-                Vebsaytni ko'rish
+                Visit Website
             </a>
-            <a href="https://t.me/iqbolshoh_777" class="btn">
+            <a href="https://t.me/templates_uz_support" class="btn">
                 <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-                Bepul maslahat
+                Free Consultation
             </a>
         </div>
     </div>

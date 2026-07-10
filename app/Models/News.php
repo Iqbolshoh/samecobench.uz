@@ -9,13 +9,13 @@ class News extends Model
 {
     protected $fillable = ['title', 'description', 'image', 'views'];
 
-    // Ma'lumotlarni teskari tartibda olish uchun scope
+    // Scope to fetch records in descending order
     public function scopeOrderByLatest($query)
     {
         return $query->orderBy('created_at', 'desc');
     }
 
-    // Viewlarni oshirish
+    // Increment the view count
     public function incrementView()
     {
         $this->increment('views');
@@ -25,7 +25,7 @@ class News extends Model
     {
         parent::boot();
 
-        // Yangilik o‘chirilib ketayotganida tasvirni o‘chirish
+        // Delete the image when the news article is deleted
         static::deleting(function ($news) {
             $news->deleteImagesFromDescription();
 
@@ -34,7 +34,7 @@ class News extends Model
             }
         });
 
-        // Yangilik yangilanganida eski tasvirni o‘chirish
+        // Delete the old image when the news article is updated
         static::updating(function ($news) {
             if ($news->isDirty('image')) {
                 $oldImage = $news->getOriginal('image');
@@ -45,7 +45,7 @@ class News extends Model
         });
     }
 
-    // Tasvirlarni tavsifdan o‘chirish
+    // Remove images referenced in the description
     public function deleteImagesFromDescription()
     {
         $images = $this->extractImages($this->description);
@@ -58,7 +58,7 @@ class News extends Model
         }
     }
 
-    // Tavsifdan tasvirlarni olish
+    // Extract images from the description
     private function extractImages($content): array
     {
         preg_match_all('/<img[^>]+src="([^">]+)"/', $content, $matches);

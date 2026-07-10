@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Bosh sahifa | '. config('app.name'))
+@section('title', 'Home | '. config('app.name'))
 
-@section('description', 'Sam Ecobench — Samarqandda joylashgan quyosh energiyasi asosidagi ekologik mahsulotlar va xizmatlarni taklif etuvchi innovatsion kompaniya. Biz bilan kelajakni ekologik toza qiling!')
+@section('description', 'Sam Ecobench — an innovative company based in Samarkand offering eco-friendly products and services powered by solar energy. Join us in building a cleaner future!')
 
-@section('keywords', 'Sam Ecobench, ekologik mahsulotlar, quyosh energiyasi, Samarqand, quyosh panellari, yashil energiya, smart skameyka, quyosh ustunlari, ekologik texnologiyalar, uzbekistan solar energy')
+@section('keywords', 'Sam Ecobench, eco-friendly products, solar energy, Samarkand, solar panels, green energy, smart bench, solar pillars, eco technologies, uzbekistan solar energy')
 
 
 @section('content')
-    <!-- Qahramon Bo‘limi (Hero) -->
+    <!-- Hero Section -->
     <section id="hero" class="hero section">
 
         <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
@@ -78,7 +78,7 @@
         </div>
     </section>
 
-    <!-- Xizmatlar bo‘limi -->
+    <!-- Services Section -->
     <section id="services" class="services section">
         <div class="container">
             <div class="row gy-4">
