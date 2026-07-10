@@ -16,7 +16,7 @@ class SocialLinkSeeder extends Seeder
             ['title' => 'Description', 'icon' => '', 'link' => '', 'value' => 'A brief overview of my services and contact details.', 'is_active' => true],
             ['title' => 'Address', 'icon' => 'bi bi-geo-alt', 'link' => '', 'value' => 'Samarkand City, Boulevard', 'is_active' => true],
             ['title' => 'Email', 'icon' => 'bi bi-envelope', 'link' => 'mailto:', 'value' => 'iilhomjonov777@gmail.com', 'is_active' => true],
-            ['title' => 'Phone', 'icon' => 'bi bi-telephone', 'link' => 'tel:', 'value' => '+998997799333', 'is_active' => true],
+            ['title' => 'Phone', 'icon' => 'bi bi-telephone', 'link' => 'tel:', 'value' => '+998776030033', 'is_active' => true],
             ['title' => 'Telegram', 'icon' => 'bi bi-telegram', 'link' => 'https://t.me/', 'value' => 'iqbolshoh_777', 'is_active' => true],
             ['title' => 'Facebook', 'icon' => 'bi bi-facebook', 'link' => 'https://facebook.com/', 'value' => null, 'is_active' => false],
             ['title' => 'Instagram', 'icon' => 'bi bi-instagram', 'link' => 'https://instagram.com/', 'value' => 'iqbolshoh_777', 'is_active' => true],

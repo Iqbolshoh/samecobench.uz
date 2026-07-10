@@ -112,7 +112,7 @@
                 <span class="btn-icon"><i class="fa-solid fa-globe"></i></span>
                 Visit Website
             </a>
-            <a href="https://t.me/templates_uz_support" class="btn">
+            <a href="https://t.me/+998776030033" class="btn">
                 <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
                 Free Consultation
             </a>
